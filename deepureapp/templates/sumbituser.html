@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+</head>
+<body>
+<h1>{{ hello }}</h1>
+<button id="sumbitinfo">我要提交数据</button>
+<button id="exporttable">我要导出数据</button>
+</body>
+
+{#插入页面渲染js#}
+{#{% block page-rolad-js %}#}
+{#    var page_obj=new PageObj();#}
+{#    page_obj.init()#}
+{#{% endblock %}#}
+<script type="text/javascript" src="/static/assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="/static/assets/js/script.js"></script>
+<script type="text/javascript" src="/static/pagejs/sumbituser.js"></script>
+<script type="text/javascript">
+    var page_obj=new PageObj();
+    {#    初始化函数#}
+    page_obj.init();
+</script>
+</html>
